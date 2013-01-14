@@ -1,0 +1,285 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  width: 100% !important;
+  background-color: #000;
+  -webkit-text-size-adjust: none;
+}
+
+.topcell, .logocell, .blankcell, .list, .boxcell {
+  color: #3c3c3c;
+  font-size: 14px;
+  font-family: Arial,sans-serif;
+}
+
+.toptable {
+  width: 580px;
+}
+
+.topcell {
+  text-align: right;
+}
+
+.logotable {
+  margin-bottom: 10px;
+}
+
+.logocell {
+  color: #fff;
+  font-size: 13px;
+  background-color: #000;
+  font-weight: bold;
+}
+
+.logocell a.navlink {
+  color: #fff;
+  line-height: 30px;
+  height: 30px;
+  background-color: #1c1c1c;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.logocell a.navlink.highlighted {
+  background-color: #ff571a;
+}
+
+.eye {
+  vertical-align: middle;
+}
+.username {
+  margin:0;
+  color:#b7b7b7;
+  font-size: 12px;
+}
+
+.username span {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid #fff;
+}
+
+.username span.first {
+  border: 0;
+  padding-left: 0;
+}
+
+.username span strong {
+  color: #fff;
+}
+
+.table {
+  width: 600px;
+}
+
+.blanktable {
+  margin-bottom: 15px;
+}
+
+.blankcell {
+  padding: 17px 30px 0px;
+  background: #ffffff url(gfx/mueca.png) no-repeat 0px 0px;
+  border-radius: 7px;
+}
+
+.blankcell p {
+  margin: 0 0 15px 0;
+  padding-top: 0;
+  line-height: 19px;
+}
+
+.boxtable {
+  margin: 30px 0;
+}
+
+.boxcell {
+  border: 1px solid #ededed;
+  border-radius: 20px;
+  min-height: 40px;
+  margin: 30px 0;
+  padding: 15px;
+  background-color: #f4f4f4;
+}
+
+.blankcell p:last-child {
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 34px;
+  margin: 0 0 15px 0;
+}
+
+h3 {
+  font-size: 26px;
+  margin: 0 0 15px 0;
+}
+
+h4 {
+  font-size: 22px;
+  margin: 0 0 15px 0;
+}
+
+h5 {
+  font-size: 17px;
+  margin: 0 0 15px 0;
+}
+
+h6 {
+  font-size: 15px;
+  margin: 0 0 15px 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2c97fc;
+}
+
+.blankcell a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #bbb;
+  margin: 15px 0;
+}
+
+p.followus {
+  font-weight: bold;
+  text-align: right;
+  height: 30px;
+  line-height: 30px;
+  padding: 15px 0;
+  margin: 30px 0;
+  border-top: 1px solid #bcbcbc;
+  border-bottom: 1px solid #bcbcbc;
+}
+
+.followus img {
+  margin-top: -4px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.linkstable {
+  line-height: 20px;
+  margin: 30px 0 20px;
+}
+
+.linkscell {
+  width: 174px;
+}
+
+.linkscell:last-child h4 {
+  margin-right: 0;
+}
+
+.linkstable a,  .linkstable a:visited {
+  color: #3c3c3c;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.linkstable h4 {
+  font-weight: bold;
+  font-size: 14px;
+  margin:0 20px 10px 0;
+  padding: 0;
+  height:20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.linkstable p {
+  padding: 0;
+  margin: 0;
+}
+
+.terms {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  color: #fff;
+  padding: 15px 30px 0 30px;
+}
+
+.terms p {
+  margin-bottom: 10px;
+}
+
+a img {
+  border: none;
+}
+
+ul {
+  padding-left: 0px;
+  margin: 0;
+}
+
+ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+ul li {
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 19px;
+  margin-bottom: 10px;
+  background: transparent url('gfx/bullet.png') no-repeat 0px 0px;
+  padding-left: 5px;
+}
+
+li:last-child {
+  margin-bottom: 15px;
+}
+
+.list {
+  margin-bottom: 20px;
+}
+
+.list td, .list th {
+  text-align: right;
+  padding: 5px 7px;
+}
+
+.list th {
+  font-weight: bold;
+}
+
+.list tr td:first-child, .list tr th:first-child {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.list tr td:last-child, .list tr th:last-child {
+  padding-right: 15px;
+}
+
+.list tr:nth-child(odd) td, .list tr.total td {
+  background-color: #f4f4f4;
+  border: 1px solid #e8e8e8;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.list tr:nth-child(odd) td:first-child, .list tr.total td:first-child {
+  border-left-width: 1px;
+  border-radius: 10px 0 0 10px;
+}
+
+.list tr:nth-child(odd) td:last-child, .list tr.total td:last-child {
+  border-right-width: 1px;
+  border-radius: 0 10px 10px 0;
+}
+
+.list tr.total td {
+  background-color: #3c3c3c !important;
+  font-weight: bold;
+  color: #fff;
+  border: 0 !important;
+}
