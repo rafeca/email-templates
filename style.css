@@ -5,6 +5,11 @@ body {
   -webkit-text-size-adjust: none;
 }
 
+table {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .topcell, .logocell, .blankcell, .list, .boxcell {
   color: #3c3c3c;
   font-size: 14px;
@@ -21,6 +26,8 @@ body {
 
 .logotable {
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logocell {
@@ -69,14 +76,17 @@ body {
 
 .table {
   width: 600px;
+  margin: 0 auto;
 }
 
 .blanktable {
   margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .blankcell {
-  padding: 17px 25px;
+  padding: 17px 29px;
   background: #ffffff url(gfx/mueca.png) no-repeat 0px 0px;
   border-radius: 7px;
 }
