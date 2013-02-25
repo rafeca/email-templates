@@ -103,3 +103,8 @@ $  rake "sendmail[youremailadress@gmail.com]"
   * live.com
   * GMail app in iOS
 - The email is shown really big (desktop size) and can't be zoomed out (Gmail app in Android - common problem)
+
+# LICENSE
+
+* The giffgaff name, logo and all associated designs are property of giffgaff.com
+* The HTML, CSS and Ruby code in this repository is released under the MIT license
