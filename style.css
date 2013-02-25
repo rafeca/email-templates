@@ -236,7 +236,6 @@ ol li {
 }
 
 ul li {
-  list-style-type: square;
   list-style-position: inside;
   line-height: 19px;
   margin-bottom: 10px;
