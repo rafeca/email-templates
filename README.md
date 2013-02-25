@@ -27,19 +27,18 @@ $  rake "sendmail[youremailadress@gmail.com]"
 
 # Compatibility
 
-## First-class browsers:
+## First-class browsers
 
 * Gmail (Chrome 24 in OSX)
 * iPhone client (iOS 5.1)
 
-## Full list of tested browsers:
+## Full list of tested browsers
 
 ### Mobile clients
 
 * iPad (iOS 6.1)
 * iPhone (iOS 5.1)
 * Android (2.3)
-
 * Gmail App (iOS 5.1 in iPhone)
 * Gmail App (Android 4.0 in HTC Desire)
 
@@ -56,13 +55,11 @@ $  rake "sendmail[youremailadress@gmail.com]"
 * Gmail (Firefox 18 in OSX)
 * Gmail (IE7/IE8 in Windows)
 * Gmail Mobile (iOS 5.1 in iPhone)
-
 * Yahoo! (Chrome 24 in OSX)
 * Yahoo! (Safari 6 in OSX)
 * Yahoo! (Firefox 18 in OSX)
 * Yahoo! (IE7/IE8 in Windows)
 * Yahoo! Mobile (iOS 5.1 in iPhone)
-
 * live.com (Chrome 24 in OSX)
 * live.com (Safari 6 in OSX)
 * live.com (Firefox 18 in OSX)
@@ -105,5 +102,4 @@ $  rake "sendmail[youremailadress@gmail.com]"
   * Gmail
   * live.com
   * GMail app in iOS
-
 - The email is shown really big (desktop size) and can't be zoomed out (Gmail app in Android - common problem)
