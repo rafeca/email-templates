@@ -87,7 +87,7 @@ table {
 
 .blankcell {
   padding: 17px 29px;
-  background: #ffffff url(gfx/mueca.png) no-repeat 0px 0px;
+  background: #ffffff url(gfx/mueca.png) no-repeat 0 0;
   border-radius: 7px;
 }
 
@@ -111,7 +111,7 @@ table {
 }
 
 .blankcell p:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -240,7 +240,7 @@ ul li {
   list-style-position: inside;
   line-height: 19px;
   margin-bottom: 10px;
-  background: transparent url('gfx/bullet.png') no-repeat 0px 0px;
+  background: transparent url('gfx/bullet.png') no-repeat 0 0;
   padding-left: 5px;
 }
 
