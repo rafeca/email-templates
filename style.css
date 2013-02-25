@@ -260,6 +260,14 @@ li:last-child {
   font-weight: bold;
 }
 
+.list td {
+  border-top: 1px solid #e8e8e8;
+}
+
+.list td:nth-child(odd), .list td:nth-child(even) {
+  border-top: none;
+}
+
 .list tr td:first-child, .list tr th:first-child {
   text-align: left;
   padding-left: 15px;
