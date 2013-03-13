@@ -13,17 +13,20 @@ def compile_html(file)
 end
 
 
-task :build do
-  fout = File.open("output.html", "w")
-  fout.puts compile_html('index.html')
+task :build, [:file] do |t, args|
+  file = args.file ? args.file : "index"
+  fout = File.open("output_#{file}.html", "w")
+  fout.puts compile_html(file + ".html")
   fout.close
 end
 
-task :sendmail, [:email_recipient] do |t, args|
+task :sendmail, [:email_recipient, :file] do |t, args|
   if !args.email_recipient
     raise 'usage: rake "sendmail[youemail@example.com]"'
   end
 
-  body = compile_html('index.html')
+  file = args.file ? args.file : "index"
+  body = compile_html(file + ".html")
+
   Pony.mail(:to => args.email_recipient, :from => 'me@example.com', :subject => 'giffgaff email template', :html_body => body)
 end

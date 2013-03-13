@@ -19,10 +19,16 @@ $ bundle install
 
 ## Sending emails
 
-To send the template to any address, just execute the following:
+To send the basic template to any address, just execute the following:
 
 ```bash
 $  rake "sendmail[youremailadress@gmail.com]"
+```
+
+To send any other email, just add the filename as the second parameter:
+
+```bash
+$  rake "sendmail[youremailadress@gmail.com,statement_points]"
 ```
 
 # Compatibility
