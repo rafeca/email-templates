@@ -46,6 +46,7 @@ $  rake "sendmail[youremailadress@gmail.com,statement_points]"
 * iPhone (iOS 5.1)
 * Android (2.3)
 * Gmail App (iOS 5.1 in iPhone)
+* Gmail App (iOS 6.1 in iPad)
 * Gmail App (Android 4.0 in HTC Desire)
 
 ### Desktop clients
