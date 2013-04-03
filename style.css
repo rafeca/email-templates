@@ -10,7 +10,7 @@ table {
   margin-right: 0;
 }
 
-.topcell, .logocell, .blankcell, .list, .boxcell {
+.cell, .topcell, .logocell, .blankcell, .list, .boxcell, .twocolscell {
   color: #3c3c3c;
   font-size: 14px;
   font-family: Arial,sans-serif;

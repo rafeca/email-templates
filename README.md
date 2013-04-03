@@ -93,7 +93,6 @@ $  rake "sendmail[youremailadress@gmail.com,statement_points]"
 - Wrong margins all across the email (live.com - IE7,IE8, mobile site)
 - Margins wrong in bottom links (live.com - all browsers)
 - Bullets in lists appear doubled (yahoo.com - IE7)
-- Texts inside boxes show with different font (Thunderbird)
 
 ### Major bugs
 
