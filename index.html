@@ -79,6 +79,12 @@
       padding: 10px !important;
     }
 
+    body[yahoo] .twocolscell {
+      width: 100% !important;
+      float: left;
+      margin-bottom: 15px;
+    }
+
     body[yahoo] #box-image {
       background: transparent url(http://giffgaff.github.com/email-templates/gfx/box-image-320.png) no-repeat;
       width: 258px;
@@ -240,7 +246,71 @@
         </tr>
         </table>
 
+        <hr/>
+
         <h3>Header 3</h3>
+
+        <table width="520" cellpadding="0" cellspacing="0" border="0" class="twocolstable" align="center">
+        <tr>
+          <td class="twocolscell" valign="top">
+            <p>Some emails may contain two main columns, so they can fit more information in less space.</p>
+
+            <ul>
+              <li>Lists are allowed here.</li>
+              <li>Basically, any kind of regular <a href="">formatting</a> is allowed inside the left column.</li>
+            </ul>
+
+            <p>This left column may contain as well a main image, which will have a <strong>smaller size</strong> than
+              a regular main image (and won't have a mobile version):</p>
+
+            <p align="center"><img width="245" height="120" alt="Main email image" src="gfx/big-column-icon.jpg" /></p>
+
+            <p>Numbered lists are also allowed:</p>
+
+            <ol>
+              <li>This is the first item of the numbered list</li>
+              <li>This one is the second and last one.</li>
+            </ol>
+
+            <hr/>
+
+            <h4>Important note</h4>
+
+            <p>When using two columns emails, it's recommended to not mix them with single column sections (so the whole
+              mail will have two columns).</p>
+          </td>
+
+          <td class="twocolscell" valign="top">
+            <table width="260" cellpadding="0" cellspacing="0" border="0" class="boxtable" align="center">
+            <tr>
+              <td class="boxcell">
+
+                <h5>First item (header 5)</h5>
+                <p align="center"><img width="70" height="80" alt="Table image" src="gfx/table-img-1.png"/></p>
+                <p>Regular text with <a href="http://giffgaff.com">links</a>, and <strong>any kind</strong> of allowed
+                formatting. Multiple lines are allowed and the text can be smaller than the image.</p>
+
+                <hr/>
+
+                <h5>Second item</h5>
+                <p align="center"><img width="70" height="80" alt="Table image" src="gfx/table-img-2.png"/></p>
+                <p>Regular text with <a href="http://giffgaff.com">links</a>, and <strong>any kind</strong> of allowed
+                formatting. Multiple lines are allowed and the text can be smaller than the image.</p>
+
+                <hr/>
+
+                <h5>Last item</h5>
+                <p align="center"><img width="70" height="80" alt="Table image" src="gfx/table-img-3.png"/></p>
+                <p>Regular text with <a href="http://giffgaff.com">links</a>, and <strong>any kind</strong> of allowed
+                formatting. Multiple lines are allowed and the text can be smaller than the image.</p>
+              </td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+        </table>
+
+        <hr/>
 
         <p>Sometimes is better to present information inline with images, so the information is displayed in a more
           visual way. To do so, <strong>70x80</strong> icon images are used.</p>

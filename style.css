@@ -115,6 +115,23 @@ table {
   margin-bottom: 0;
 }
 
+.twocolstable {
+  margin: 30px 0;
+}
+
+.twocolscell {
+  width: 260px;
+}
+
+.twocolscell:first-child {
+  width: 245px;
+  padding-right: 15px;
+}
+
+.twocolscell .boxtable {
+  margin: 0;
+}
+
 h2 {
   font-size: 34px;
   margin: 0 0 15px 0;
