@@ -10,7 +10,7 @@
 
   <style data-premailer="ignore" type="text/css">
   @media only screen and (max-width: 500px) {
-    body[yahoo] .table, body[yahoo] .cell {
+    body[yahoo] .maintable, body[yahoo] .maincell {
       width: 320px !important;
     }
 
@@ -82,7 +82,16 @@
     body[yahoo] .twocolscell {
       width: 100% !important;
       float: left;
-      margin-bottom: 15px;
+      padding: 15px 0 0 0 !important;
+      border: 0 !important;
+    }
+
+    body[yahoo] .twocolscell:first-child {
+      padding: 0 0 15px 0 !important;
+    }
+
+    body[yahoo] .boxtable .twocolscell:first-child {
+      border-bottom: 1px solid #bbb !important;
     }
 
     body[yahoo] #box-image {
@@ -160,9 +169,9 @@
 </tr>
 </table>
 
-<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="table">
+<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="maintable">
 <tr>
-  <td width="600" class="cell">
+  <td width="600" class="maincell">
 
     <!-- HEADER -->
     <table border="0" cellpadding="0" cellspacing="0" width="580" class="logotable" align="center">
@@ -425,6 +434,63 @@
                   <p>Do not try to center the text vertically by adding empty lines.</p>
                 </td>
               </tr>
+            </table>
+          </td>
+        </tr>
+        </table>
+
+        <hr/>
+
+        <p>And also two columns inside:</p>
+
+        <table width="520" cellpadding="0" cellspacing="0" border="0" class="boxtable" align="center">
+        <tr>
+          <td class="boxcell">
+
+            <table width="490" cellpadding="0" cellspacing="0" border="0" class="twocolstable border" align="center">
+            <tr>
+              <td class="twocolscell" valign="top">
+                <h5>Box 1</h5>
+
+                <p align="center"><img width="70" height="80" alt="Table image" src="gfx/table-img-1.png"/></p>
+
+                <p>Regular text with <a href="http://giffgaff.com">links</a>, and <strong>any kind</strong> of allowed
+                formatting. Multiple lines are allowed and the text can be smaller than the image.</p>
+              </td>
+
+              <td class="twocolscell" valign="top">
+                <h5>Box 2</h5>
+
+                <p align="center"><img width="70" height="80" alt="Table image" src="gfx/table-img-1.png"/></p>
+
+                <p>Regular text with <a href="http://giffgaff.com">links</a>, and <strong>any kind</strong> of allowed
+                formatting. Multiple lines are allowed and the text can be smaller than the image.</p>
+              </td>
+            </tr>
+            </table>
+
+            <hr/>
+
+            <table width="490" cellpadding="0" cellspacing="0" border="0" class="twocolstable border" align="center">
+            <tr>
+              <td class="twocolscell" valign="top">
+                <h5>Box 3</h5>
+
+                <p align="center"><img width="70" height="80" alt="Table image" src="gfx/table-img-1.png"/></p>
+
+                <p>Regular text with <a href="http://giffgaff.com">links</a>, and <strong>any kind</strong> of allowed
+                formatting. Multiple lines are allowed and the text can be smaller than the image.</p>
+              </td>
+
+              <td class="twocolscell" valign="top">
+                <h5>Box 4</h5>
+
+                <p align="center"><img width="70" height="80" alt="Table image" src="gfx/table-img-1.png"/></p>
+
+                <p>Regular text with <a href="http://giffgaff.com">links</a>, and <strong>any kind</strong> of allowed
+                formatting. Multiple lines are allowed and the text can be smaller than the image.</p>
+              </td>
+            </tr>
             </table>
           </td>
         </tr>

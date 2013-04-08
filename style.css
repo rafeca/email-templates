@@ -75,7 +75,7 @@ table {
   color: #fff;
 }
 
-.table {
+.maintable {
   width: 600px;
   margin: 0 auto;
 }
@@ -130,6 +130,21 @@ table {
 
 .twocolscell .boxtable {
   margin: 0;
+}
+
+.boxcell .twocolstable {
+  margin: 0;
+}
+
+.boxcell .twocolscell {
+  padding-left: 15px;
+  width: 245px;
+}
+
+.boxcell .twocolscell:first-child {
+  border-right: 1px solid #bbb;
+  padding-left: 0;
+  padding-right: 14px;
 }
 
 h2 {
