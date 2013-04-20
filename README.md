@@ -1,6 +1,8 @@
 # giffgaff emails template
 
-This project contains the main template to create the giffgaff marketing emails.
+This project contains an example of responsive email templates (used to create the giffgaff marketing emails).
+
+You can check the templates by accessing [here](http://rafeca.com/email-templates)
 
 # How to test
 
@@ -25,7 +27,7 @@ To send the basic template to any address, just execute the following:
 $  rake "sendmail[youremailadress@gmail.com]"
 ```
 
-To send any other email, just add the filename as the second parameter:
+To send any other email (a different html file inside the repo folder), just add the filename as the second parameter:
 
 ```bash
 $  rake "sendmail[youremailadress@gmail.com,statement_points]"
