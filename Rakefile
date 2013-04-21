@@ -2,7 +2,10 @@ require 'premailer'
 require 'pony'
 
 def compile_html(file)
-  premailer = Premailer.new(file, {:warn_level => Premailer::Warnings::RISKY, :base_url => 'http://giffgaff.github.com/email-templates/'})
+  premailer = Premailer.new(file, {
+    :warn_level => Premailer::Warnings::RISKY,
+    :base_url => 'http://rafeca.github.com/email-templates/'
+  })
   out = premailer.to_inline_css
 
   # Output any CSS warnings
@@ -28,5 +31,10 @@ task :sendmail, [:email_recipient, :file] do |t, args|
   file = args.file ? args.file : "index"
   body = compile_html(file + ".html")
 
-  Pony.mail(:to => args.email_recipient, :from => 'me@example.com', :subject => 'giffgaff email template', :html_body => body)
+  Pony.mail(
+    :to => args.email_recipient,
+    :from => 'me@example.com',
+    :subject => 'giffgaff email template',
+    :html_body => body
+  )
 end
