@@ -14,6 +14,7 @@ table {
   color: #3c3c3c;
   font-size: 14px;
   font-family: Arial,sans-serif;
+  word-break: break-all;
 }
 
 .toptable {
@@ -318,6 +319,11 @@ li:last-child {
   border-left-width: 0;
 }
 
+.list.yellow tr:nth-child(odd) td, .list tr.total td {
+  background-color: #ffee95;
+  border-color: #ffe45a;
+}
+
 .list tr:nth-child(odd) td:first-child, .list tr.total td:first-child {
   border-left-width: 1px;
   border-radius: 10px 0 0 10px;
@@ -329,8 +335,14 @@ li:last-child {
 }
 
 .list tr.total td {
-  background-color: #3c3c3c !important;
+  background-color: #3c3c3c;
   font-weight: bold;
   color: #fff;
-  border: 0 !important;
+  border-color: #3c3c3c;
+}
+
+.list.yellow tr.total td {
+  background-color: #ffb620;
+  border-color: #ffae20;
+  color: #3c3c3c;
 }
