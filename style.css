@@ -14,7 +14,6 @@ table {
   color: #3c3c3c;
   font-size: 14px;
   font-family: Arial,sans-serif;
-  word-break: break-all;
 }
 
 .toptable {
@@ -189,11 +188,10 @@ hr {
   margin: 15px 0;
 }
 
-p.followus {
+body[yahoo] .blankcell p.followus {
   font-weight: bold;
   text-align: right;
-  height: 30px;
-  line-height: 30px;
+  line-height: 30px !important;
   padding: 15px 0;
   margin: 30px 0;
   border-top: 1px solid #bcbcbc;
