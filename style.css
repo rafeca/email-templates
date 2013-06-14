@@ -54,6 +54,7 @@ table {
 .eye {
   vertical-align: middle;
 }
+
 .username {
   margin:0;
   color:#b7b7b7;
@@ -172,6 +173,10 @@ h6 {
   margin: 0 0 15px 0;
 }
 
+p {
+  font-size: 14px;
+}
+
 a, a:visited {
   text-decoration: none;
   font-weight: bold;
@@ -246,6 +251,7 @@ body[yahoo] .blankcell p.followus {
 }
 
 .terms p {
+  font-size: 11px;
   margin-bottom: 10px;
 }
 
@@ -253,30 +259,22 @@ a img {
   border: none;
 }
 
-ul {
-  padding-left: 0px;
+ul, ol {
+  padding-left: 0;
   margin: 0;
 }
 
-ol {
-  padding-left: 20px;
-  margin: 0;
-}
-
-ol li {
-  margin-bottom: 10px;
+li {
+  margin: 0 0 10px 25px;
   line-height: 19px;
+  padding: 0;
 }
 
 ul li {
-  list-style-position: inside;
-  line-height: 19px;
-  margin-bottom: 10px;
-  background: transparent url('gfx/bullet.png') no-repeat left top;
-  padding-left: 5px;
+  list-style-image: url('gfx/bullet.png');
 }
 
-li:last-child {
+ul li:last-child {
   margin-bottom: 15px;
 }
 
@@ -291,10 +289,12 @@ li:last-child {
 
 .list th {
   font-weight: bold;
+  margin: 0;
 }
 
 .list td {
   border-top: 1px solid #e8e8e8;
+  margin: 0;
 }
 
 .list td:nth-child(odd), .list td:nth-child(even) {

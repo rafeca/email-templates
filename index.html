@@ -89,9 +89,6 @@
 
     body[yahoo] .twocolscell:first-child {
       padding: 0 0 15px 0 !important;
-    }
-
-    body[yahoo] .boxtable .twocolscell:first-child {
       border-bottom: 1px solid #bbb !important;
     }
 
@@ -201,7 +198,7 @@
     <!-- WHITE BOX -->
     <table width="580" cellpadding="0" cellspacing="0" border="0" class="blanktable" align="center">
     <tr>
-      <td width="580" class="blankcell">
+      <td bgcolor="#ffffff" width="580" class="blankcell">
         <h2>giffgaff email template</h2>
 
         <p>
@@ -546,40 +543,47 @@
 
         <hr/>
 
-        <p>3 column tables are also supported, and tables can have a header. For stats,a highlighted row can be
-          used to display important information:</p>
+        <p>Multicolumn tables are also supported, and tables can have a header.
+          For stats,a highlighted row can be used to display important information:</p>
 
         <table width="520" class="list" cellpadding="0" cellspacing="0" border="0">
           <thead>
             <tr>
-              <th>Table header</th>
-              <th>points</th>
-              <th width="100">cash</th>
+              <th>&nbsp;</th>
+              <th>Jan</th>
+              <th>Feb</th>
+              <th>March</th>
+              <th>Last 30 days</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>First row with 3 columns</td>
-              <td>200</td>
-              <td>&pound;20</td>
+              <td>Texts</td>
+              <td>41</td>
+              <td>20</td>
+              <td>32</td>
+              <td>234</td>
             </tr>
             <tr>
-              <td colspan="2">A row with two columns</td>
-              <td>&pound;10</td>
+              <td>Mins</td>
+              <td>2210</td>
+              <td>1876</td>
+              <td>1423</td>
+              <td>19</td>
             </tr>
             <tr>
-              <td colspan="2">Another row</td>
-              <td>&pound;100</td>
-            </tr>
-            <tr>
-              <td>The last row</td>
-              <td>50</td>
-              <td>&pound;5</td>
+              <td>MB</td>
+              <td>2230.44</td>
+              <td>1240.33</td>
+              <td>1891.45</td>
+              <td>1309.22</td>
             </tr>
             <tr class="total">
-              <td>highlighted row</td>
-              <td>250</td>
-              <td>&pound;135</td>
+              <td>Total</td>
+              <td>2230.44</td>
+              <td>1240.33</td>
+              <td>1891.45</td>
+              <td>1309.22</td>
             </tr>
           </tbody>
         </table>
@@ -636,23 +640,29 @@
     </table>
 
     <!-- Terms and Conditions -->
-    <div class="terms">
-      <p>Full terms and conditions and privacy policy. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Maecenas malesuada pellentesque lorem. Sed id
-        erat non quam laoreet eleifend. In molestie faucibus tellus ut sollicitudin.
-        Vestibulum gravida tincidunt metus, at commodo mi cursus id. Donec interdum,
-        sem eget tristique vulputate, est sapien blandit eros, vulputate fermentum
-        arcu felis volutpat dui. Praesent egestas eleifend varius. Proin scelerisque
-        dictum porttitor. Suspendisse at enim neque. Phasellus lobortis convallis
-        massa sit amet elementum. Nulla et lorem velit, quis congue metus.</p>
+    <table class="terms">
+      <tr>
+        <td>
+          <p>Full terms and conditions and privacy policy. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Maecenas malesuada pellentesque lorem. Sed id
+            erat non quam laoreet eleifend. In molestie faucibus tellus ut sollicitudin.
+            Vestibulum gravida tincidunt metus, at commodo mi cursus id. Donec interdum,
+            sem eget tristique vulputate, est sapien blandit eros, vulputate fermentum
+            arcu felis volutpat dui. Praesent egestas eleifend varius. Proin scelerisque
+            dictum porttitor. Suspendisse at enim neque. Phasellus lobortis convallis
+            massa sit amet elementum. Nulla et lorem velit, quis congue metus.
+          </p>
 
-      <p>Quisque varius imperdiet justo, eu consequat massa feugiat a. Mauris eu
-        ligula ultrices urna fringilla adipiscing ut eu quam. Fusce auctor, neque
-        vitae ullamcorper commodo, justo neque vulputate elit, sit amet porta tellus
-        lorem a erat. Suspendisse potenti. Quisque eget lectus dui. Duis dolor nisl,
-        facilisis eget accumsan eu, lacinia a felis. Praesent rutrum urna mattis eros
-        iaculis egestas. Pellentesque sollicitudin tincidunt dictum.</p>
-    </div>
+          <p>Quisque varius imperdiet justo, eu consequat massa feugiat a. Mauris eu
+            ligula ultrices urna fringilla adipiscing ut eu quam. Fusce auctor, neque
+            vitae ullamcorper commodo, justo neque vulputate elit, sit amet porta tellus
+            lorem a erat. Suspendisse potenti. Quisque eget lectus dui. Duis dolor nisl,
+            facilisis eget accumsan eu, lacinia a felis. Praesent rutrum urna mattis eros
+            iaculis egestas. Pellentesque sollicitudin tincidunt dictum.
+          </p>
+        </td>
+      </tr>
+    </table>
   </td>
 </tr>
 </table>

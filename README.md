@@ -57,6 +57,8 @@ $  rake "sendmail[youremailadress@gmail.com,statement_points]"
 * Oulook 2011 (OSX 10.8)
 * Windows Live Mail 2012 (Windows 7)
 * Mozilla Thunderbird 17 (Windows 7)
+* Outlook Express 6.0 (Windows XP) - minor issues
+* Outlook 2007 (Windows XP) - minor issues
 
 ### Web-based providers
 
@@ -79,7 +81,6 @@ $  rake "sendmail[youremailadress@gmail.com,statement_points]"
 
 ## Not tested yet
 
-* Outlook Express
 * Outlook 2010
 * IE9/IE10
 * Yahoo iOS/Android App
@@ -95,7 +96,9 @@ $  rake "sendmail[youremailadress@gmail.com,statement_points]"
 - Titles in green (live.com - IE7,IE8)
 - Wrong margins all across the email (live.com - IE7,IE8, mobile site)
 - Margins wrong in bottom links (live.com - all browsers)
-- Bullets in lists appear doubled (yahoo.com - IE7)
+- Horizontal separators of 2px (Outlook Express)
+- Lists margins are not perfect (Outlook 2007)
+
 
 ### Major bugs
 
