@@ -89,8 +89,16 @@ table {
 
 .blankcell {
   padding: 17px 29px;
+  background-color: #ffffff;
+}
+
+.blanktable tr:first-child .blankcell {
+  border-radius: 7px 7px 0 0;
   background: #ffffff url(gfx/mueca.png) no-repeat left top;
-  border-radius: 7px;
+}
+
+.blanktable tr:last-child .blankcell {
+  border-radius: 0 0 7px 7px;
 }
 
 .blankcell p {
@@ -349,4 +357,67 @@ ul li:last-child {
   background-color: #ffb620;
   border-color: #ffae20;
   color: #3c3c3c;
+}
+
+
+/** YELLOW TABLES **/
+
+.blankcell.yellow {
+  background: #ffdd32;
+}
+
+.blankcell.yellow hr {
+  border-bottom-color: #666;
+}
+
+.blankcell.yellow .boxcell {
+  background-color: #ffe45e;
+  background-color: #ffef77;
+  border: 0;
+  box-shadow: 1px 1px 2px #f3c329;
+}
+
+
+
+/** GREEN TABLES **/
+
+.blankcell.green {
+  background: #63dd77;
+}
+
+.blankcell.green hr {
+  border-bottom-color: #3c3c3c;
+}
+
+
+.blankcell.green .boxcell {
+  background-color: #87f18a;
+  border: 0;
+  box-shadow: 1px 1px 2px #53cd67;
+}
+
+
+/** TURQUOISE TABLES **/
+
+.blankcell.turquoise {
+  background: #00aaad;
+}
+
+.blankcell.turquoise hr {
+  border-bottom-color: #3c3c3c;
+}
+
+.turquoise.blankcell, .turquoise .list, .turquoise .boxcell, .turquoise .twocolscell {
+  color: #333;
+}
+
+.blankcell.turquoise a {
+  color: #000;
+}
+
+.blankcell.turquoise .boxcell {
+  background-color: #9fd8d9;
+  background-color: #5fc8c9;
+  border: 0;
+  box-shadow: 1px 1px 2px #008b8b;
 }
