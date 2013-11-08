@@ -94,7 +94,9 @@ table {
 
 .blanktable tr:first-child .blankcell {
   border-radius: 7px 7px 0 0;
-  background: #ffffff url(gfx/mueca.png) no-repeat left top;
+  background-image: url(gfx/mueca.png);
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .blanktable tr:last-child .blankcell {
@@ -139,6 +141,7 @@ table {
 .twocolscell:first-child {
   width: 245px;
   padding-right: 15px;
+  border-bottom-color: #bbb;
 }
 
 .twocolscell .boxtable {
@@ -363,11 +366,15 @@ ul li:last-child {
 /** YELLOW TABLES **/
 
 .blankcell.yellow {
-  background: #ffdd32;
+  background: #ffdd32 !important;
 }
 
 .blankcell.yellow hr {
-  border-bottom-color: #666;
+  border-bottom-color: #bfae55;
+}
+
+.blankcell.yellow .twocolscell:first-child {
+  border-color: #bfae55;
 }
 
 .blankcell.yellow .boxcell {
@@ -377,18 +384,33 @@ ul li:last-child {
   box-shadow: 1px 1px 2px #f3c329;
 }
 
+.blankcell.yellow .list tr:nth-child(odd) td, .blankcell.yellow .list tr.total td {
+  background-color: #ffee95;
+  border: 1px solid #ffe45a;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.blankcell.yellow .list tr.total td {
+  background-color: #ffb620;
+  border-color: #ffae20;
+  color: #3c3c3c;
+}
 
 
 /** GREEN TABLES **/
 
 .blankcell.green {
-  background: #63dd77;
+  background: #63dd77 !important;
 }
 
 .blankcell.green hr {
-  border-bottom-color: #3c3c3c;
+  border-bottom-color: #57b15a;
 }
 
+.blankcell.green .twocolscell:first-child {
+  border-color: #57b15a;
+}
 
 .blankcell.green .boxcell {
   background-color: #87f18a;
@@ -396,15 +418,32 @@ ul li:last-child {
   box-shadow: 1px 1px 2px #53cd67;
 }
 
+.blankcell.green .list tr:nth-child(odd) td, .blankcell.green .list tr.total td {
+  background-color: #87f18a;
+  border: 1px solid #87f18a;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.blankcell.green .list tr.total td {
+  background-color: #57b15a;
+  border-color: #57c15a;
+  color: #3c3c3c;
+}
+
 
 /** TURQUOISE TABLES **/
 
 .blankcell.turquoise {
-  background: #00aaad;
+  background: #00aaad !important;
+}
+
+.blankcell.turquoise .twocolscell:first-child {
+  border-color: #00777f;
 }
 
 .blankcell.turquoise hr {
-  border-bottom-color: #3c3c3c;
+  border-bottom-color: #00777f;
 }
 
 .turquoise.blankcell, .turquoise .list, .turquoise .boxcell, .turquoise .twocolscell {
@@ -412,7 +451,12 @@ ul li:last-child {
 }
 
 .blankcell.turquoise a {
-  color: #000;
+  color: #333;
+  text-decoration: underline;
+}
+
+.blankcell.turquoise a:hover {
+  text-decoration: none;
 }
 
 .blankcell.turquoise .boxcell {
@@ -420,4 +464,17 @@ ul li:last-child {
   background-color: #5fc8c9;
   border: 0;
   box-shadow: 1px 1px 2px #008b8b;
+}
+
+.blankcell.turquoise .list tr:nth-child(odd) td, .blankcell.turquoise .list tr.total td {
+  background-color: #5fc8c9;
+  border: 1px solid #5fc8c9;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.blankcell.turquoise .list tr.total td {
+  background-color: #00777f;
+  border-color: #00777f;
+  color: #efefef;
 }
