@@ -10,7 +10,7 @@ table {
   margin-right: 0;
 }
 
-.cell, .topcell, .logocell, .blankcell, .list, .boxcell, .twocolscell {
+.cell, .topcell, .logocell, .navcell, .blankcell, .list, .boxcell, .twocolscell {
   color: #3c3c3c;
   font-size: 14px;
   font-family: Arial,sans-serif;
@@ -25,8 +25,7 @@ table {
   text-align: right;
 }
 
-.logotable {
-  margin-bottom: 10px;
+.logotable, .navtable {
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,22 +33,54 @@ table {
 .logocell {
   color: #fff;
   font-size: 13px;
-  background-color: #000;
+  background-color: #292929;
   font-weight: bold;
 }
 
-.logocell a.navlink {
+.hide-desktop {
+  max-height: 0px;
+  font-size: 0;
+  display: none;
+  overflow: hidden;
+}
+
+/* START FLIPADA NAV */
+#nav {
+  margin-top: -60px;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+#expander {
+  display: block;
+  width: 50px;
+  height: 60px;
+  background: #292929 url(gfx/expander.png) no-repeat center center;
+}
+
+#expanded {
+  display: none;
+}
+
+#expanded td {
+  border-radius: 0 0 10px 10px;
+}
+
+.navcell a.navlink {
   color: #fff;
   line-height: 30px;
   height: 30px;
-  background-color: #1c1c1c;
   padding: 8px 12px;
-  border-radius: 5px;
+  display: block;
+  border-bottom: 1px solid #303030;
 }
 
-.logocell a.navlink.highlighted {
-  background-color: #ff571a;
+.navcell a.navlink:last-child {
+  border-bottom: none;
 }
+
+/* END FLIPADA NAV */
 
 .eye {
   vertical-align: middle;
@@ -59,17 +90,13 @@ table {
   margin:0;
   color:#b7b7b7;
   font-size: 12px;
+  border-right: 1px solid #000;
 }
 
 .username span {
-  padding-left: 10px;
-  padding-right: 10px;
-  border-left: 1px solid #fff;
-}
-
-.username span.first {
-  border: 0;
-  padding-left: 0;
+  padding-right: 20px;
+  line-height: 20px;
+  display: block;
 }
 
 .username span strong {
@@ -78,7 +105,8 @@ table {
 
 .maintable {
   width: 600px;
-  margin: 0 auto;
+  margin: 30px auto 0;
+  padding: 0;
 }
 
 .blanktable {

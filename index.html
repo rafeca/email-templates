@@ -14,30 +14,14 @@
       width: 320px !important;
     }
 
-    body[yahoo] .fulltable, body[yahoo] .fullcell {
-      width: 100% !important;
-    }
-
     body[yahoo] .toptable, body[yahoo] .topcell, body[yahoo] .logotable,
-    body[yahoo] .logocell, body[yahoo] .blanktable, body[yahoo] .blankcell {
+    body[yahoo] .navtable, body[yahoo] .blanktable, body[yahoo] .blankcell {
       width: 300px !important;
     }
 
-    body[yahoo] .logocell {
-      display: block;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    body[yahoo] .logocell p {
-      text-align: left;
-    }
-
     body[yahoo] .username span {
-      display: block;
       border: 0 !important;
       padding: 0 !important;
-      line-height: 16px;
     }
 
     body[yahoo] .blankcell {
@@ -130,6 +114,13 @@
       width: 100%;
     }
 
+    body[yahoo] .hide-desktop {
+      font-size: 12px !important;
+      max-height: none !important;
+      display: block !important;
+      z-index: 2;
+    }
+
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       body[yahoo] #big-icon {
         background-image: url(http://rafeca.github.com/email-templates/gfx/big-icon-320@2x.jpg);
@@ -145,6 +136,15 @@
         background-size: 258px 120px;
       }
     }
+  }
+
+  #expander-area:hover #expander {
+    background-color: #181818 !important;
+    background-image: url(http://rafeca.github.com/email-templates/gfx/expander-hover.png) !important;
+  }
+
+  #expander-area:hover ~ tr {
+    display: table-row !important;
   }
   </style>
 </head>
@@ -169,32 +169,62 @@
 </tr>
 </table>
 
-<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="maintable">
+<!-- HEADER -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="fulltable">
 <tr>
-  <td width="600" class="maincell">
-
-    <!-- HEADER -->
+  <td width="100%" class="fullcell" bgcolor="#292929" height="30">
     <table border="0" cellpadding="0" cellspacing="0" width="580" class="logotable" align="center">
     <tr>
-      <td width="200" height="90" class="logocell">
-        <img width="173" height="69" src="gfx/logo.png" alt="giffgaff" title="giffgaff - The mobile network run by you"/>
+      <td width="158" class="logocell">
+        <img width="138" height="60" src="gfx/logo.png" alt="giffgaff" title="giffgaff - The mobile network run by you"/>
       </td>
-      <td width="380" class="logocell" align="right">
-        <p class="hide">
-          <a class="navlink" href="">My giffgaff</a>
-          <a class="navlink" href="">Help</a>
-          <a class="navlink" href="">Top-up</a>
-          <a class="navlink" href="">Ideas</a>
-          <a class="navlink" href="">Blog</a>
-        </p>
-
-        <p class="username">
-          <span class="first">Membername:&nbsp; <strong>xxxx</strong></span>
+      <td class="logocell" align="right">
+        <p class="username hide">
+          <span>Membername:&nbsp; <strong>xxxx</strong></span>
           <span>Phone number: <strong>xxxx</strong></span>
         </p>
       </td>
+
+      <td width="55" class="logocell" align="right">
+        <a href="http://www.giffgaff.com">
+          <img width="35" height="35" src="gfx/link-plus.png" alt="expander" title="go to the giffgaff site"/>
+        </a>
+      </td>
     </tr>
     </table>
+  </td>
+</tr>
+</table>
+
+<!-- NAV -->
+<div id="nav" class="hide-desktop">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="fulltable">
+<tr>
+  <td width="100%" class="fullcell">
+    <table border="0" cellpadding="0" cellspacing="0" width="580" class="navtable" align="center">
+    <tr id="expander-area">
+    <td width="100%" height="60" align="right" class="navcell">
+      <a id="expander" href="#"></a>
+    </td>
+    </tr>
+    <tr id="expanded">
+      <td width="100%" bgcolor="#181818" class="navcell">
+        <a class="navlink" href="">My giffgaff</a>
+        <a class="navlink" href="">Help</a>
+        <a class="navlink" href="">Top-up</a>
+        <a class="navlink" href="">Ideas</a>
+        <a class="navlink" href="">Blog</a>
+      </td>
+    </tr>
+    </table>
+  </td>
+</tr>
+</table>
+</div>
+
+<table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="maintable">
+<tr>
+  <td width="600" class="maincell">
 
     <!-- WHITE BOX -->
     <table width="580" cellpadding="0" cellspacing="0" border="0" class="blanktable" align="center">
@@ -583,7 +613,7 @@
               <th>&nbsp;</th>
               <th>Jan</th>
               <th>Feb</th>
-              <th>March</th>
+              <th>Mar</th>
               <th>April</th>
             </tr>
           </thead>
@@ -606,14 +636,14 @@
               <td>MB</td>
               <td>230.44</td>
               <td>140.33</td>
-              <td>191.45</td>
+              <td>11.45</td>
               <td>109.22</td>
             </tr>
             <tr class="total">
               <td>Total</td>
               <td>230.44</td>
               <td>140.33</td>
-              <td>191.45</td>
+              <td>11.45</td>
               <td>109.22</td>
             </tr>
           </tbody>
