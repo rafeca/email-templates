@@ -44,44 +44,6 @@ table {
   overflow: hidden;
 }
 
-/* START FLIPADA NAV */
-#nav {
-  margin-top: -60px;
-  width: 100%;
-  z-index: 0;
-  position: relative;
-}
-
-#expander {
-  display: block;
-  width: 50px;
-  height: 60px;
-  background: #292929 url(gfx/expander.png) no-repeat center center;
-}
-
-#expanded {
-  display: none;
-}
-
-#expanded td {
-  border-radius: 0 0 10px 10px;
-}
-
-.navcell a.navlink {
-  color: #fff;
-  line-height: 30px;
-  height: 30px;
-  padding: 8px 12px;
-  display: block;
-  border-bottom: 1px solid #303030;
-}
-
-.navcell a.navlink:last-child {
-  border-bottom: none;
-}
-
-/* END FLIPADA NAV */
-
 .eye {
   vertical-align: middle;
 }
