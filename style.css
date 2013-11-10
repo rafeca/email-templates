@@ -422,6 +422,47 @@ ul li:last-child {
 }
 
 
+/** BLUE TABLES **/
+
+.blankcell.blue {
+  background: #b8d6e9 !important;
+}
+
+.blankcell.blue hr {
+  border-bottom-color: #a7a1ba;
+}
+
+.blankcell.blue .twocolscell:first-child {
+  border-color: #a7a1ba;
+}
+
+.blankcell.blue .boxcell {
+  background-color: #98b6c9;
+  border: 0;
+  box-shadow: 1px 1px 2px #7896a9;
+}
+
+.blankcell.blue .boxcell hr {
+  border-bottom-color: #7896a9;
+}
+
+.blankcell.blue .boxcell .twocolscell:first-child {
+  border-color: #7896a9;
+}
+
+.blankcell.blue .list tr:nth-child(odd) td, .blankcell.blue .list tr.total td {
+  background-color: #98b6c9;
+  border: 1px solid #98b6c9;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.blankcell.blue .list tr.total td {
+  background-color: #587689;
+  border-color: #587689;
+  color: #efefef;
+}
+
 /** TURQUOISE TABLES **/
 
 .blankcell.turquoise {
