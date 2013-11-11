@@ -153,6 +153,11 @@ table {
   padding-right: 14px;
 }
 
+h1 {
+  font-size: 52px;
+  margin: 0 0 15px 0;
+}
+
 h2 {
   font-size: 34px;
   margin: 0 0 15px 0;
@@ -277,6 +282,10 @@ li {
 
 ul li {
   list-style-image: url('gfx/bullet.png');
+}
+
+ul.nomargin li {
+  margin-bottom: 0;
 }
 
 ul li:last-child {
@@ -466,35 +475,26 @@ ul li:last-child {
 /** TURQUOISE TABLES **/
 
 .blankcell.turquoise {
-  background: #00aaad !important;
+  background: #81d8da !important;
 }
 
 .blankcell.turquoise .twocolscell:first-child {
-  border-color: #00777f;
+  border-color: #639a9f;
 }
 
 .blankcell.turquoise hr {
-  border-bottom-color: #00777f;
+  border-bottom-color: #639a9f;
 }
 
 .turquoise.blankcell, .turquoise .list, .turquoise .boxcell, .turquoise .twocolscell {
   color: #333;
 }
 
-.blankcell.turquoise a {
-  color: #333;
-  text-decoration: underline;
-}
-
-.blankcell.turquoise a:hover {
-  text-decoration: none;
-}
-
 .blankcell.turquoise .boxcell {
   background-color: #9fd8d9;
   background-color: #5fc8c9;
   border: 0;
-  box-shadow: 1px 1px 2px #008b8b;
+  box-shadow: 1px 1px 2px #639a9f;
 }
 
 .blankcell.turquoise .list tr:nth-child(odd) td, .blankcell.turquoise .list tr.total td {
