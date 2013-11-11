@@ -116,7 +116,7 @@ table {
   background-color: #f4f4f4;
 }
 
-.blankcell p:last-child {
+.blanktable > tr:last-child .blankcell p:last-child {
   margin-bottom: 0;
 }
 
