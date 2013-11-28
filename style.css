@@ -134,6 +134,10 @@ table {
   border-bottom-color: #bbb;
 }
 
+.twocolscell p:last-child {
+  margin-bottom: 0;
+}
+
 .twocolscell .boxtable {
   margin: 0;
 }
