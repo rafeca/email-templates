@@ -78,15 +78,24 @@ table {
 }
 
 .blankcell {
-  padding: 17px 29px;
+  padding: 40px 29px;
   background-color: #ffffff;
 }
 
+.blankcell > *:last-child {
+  margin-bottom: 0;
+}
+
 .blanktable tr:first-child .blankcell {
+  padding-top: 17px;
   border-radius: 7px 7px 0 0;
   background-image: url(gfx/mueca.png);
   background-repeat: no-repeat;
   background-position: left top;
+}
+
+.blanktable tr:last-child .blankcell {
+  padding-bottom: 17px;
 }
 
 .blanktable tr:last-child .blankcell {
@@ -103,7 +112,7 @@ table {
   margin: 30px 0;
 }
 
-.blankcell .boxtable:last-child {
+.blankcell .boxtable:last-child, .blankcell .twocolstable:last-child {
   margin-bottom: 15px;
 }
 
