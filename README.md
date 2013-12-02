@@ -38,14 +38,14 @@ $  rake "sendmail[youremailadress@gmail.com,statement_points]"
 ## First-class browsers
 
 * Gmail (Chrome 24 in OSX)
-* iPhone client (iOS 5.1)
+* iPhone client (iOS 7)
 
 ## Full list of tested browsers
 
 ### Mobile clients
 
 * iPad (iOS 6.1)
-* iPhone (iOS 5.1)
+* iPhone (iOS >=5.1)
 * Android (2.3)
 * Gmail App (iOS 5.1 in iPhone)
 * Gmail App (iOS 6.1 in iPad)
