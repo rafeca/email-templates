@@ -451,11 +451,11 @@ ul li:last-child {
 }
 
 .blankcell.blue hr {
-  border-bottom-color: #a7a1ba;
+  border-bottom-color: #578cad;
 }
 
 .blankcell.blue .twocolscell:first-child {
-  border-color: #a7a1ba;
+  border-color: #578cad;
 }
 
 .blankcell.blue .boxcell {
