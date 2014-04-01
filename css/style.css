@@ -1,4 +1,11 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   width: 100% !important;
   background-color: #000;
@@ -89,7 +96,7 @@ table {
 .blanktable tr:first-child .blankcell {
   padding-top: 17px;
   border-radius: 7px 7px 0 0;
-  background-image: url(gfx/mueca.png);
+  background-image: url(../gfx/mueca.png);
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -216,7 +223,7 @@ hr {
   margin: 15px 0;
 }
 
-body[yahoo] .blankcell p.followus {
+.blankcell p.followus {
   font-weight: bold;
   text-align: right;
   line-height: 30px !important;
@@ -294,7 +301,7 @@ li {
 }
 
 ul li {
-  list-style-image: url('gfx/bullet.png');
+  list-style-image: url(gfx/bullet.png);
 }
 
 ul.nomargin li {

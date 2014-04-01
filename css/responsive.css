@@ -1,0 +1,144 @@
+@media only screen and (max-width: 500px) {
+  body[yahoo] .maintable, body[yahoo] .maincell {
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  body[yahoo] .username span {
+    border: 0 !important;
+    padding: 0 !important;
+  }
+
+  body[yahoo] .blankcell {
+    padding: 17px 10px 10px !important;
+    background-image: none !important;
+    border-radius: 0px !important;
+  }
+
+  body[yahoo] .hide {
+    display: none !important;
+  }
+
+  body[yahoo] h1 {
+    font-size: 40px !important;
+  }
+
+  body[yahoo] h2 {
+    font-size: 30px !important;
+  }
+
+  body[yahoo] h3 {
+    font-size: 22px !important;
+  }
+
+  body[yahoo] img {
+    max-width: 100% !important;
+  }
+
+  body[yahoo] .terms {
+    padding: 15px 15px 0 15px !important;
+  }
+
+  body[yahoo] #big-icon {
+    background: transparent url(../gfx/big-icon-320.jpg) no-repeat;
+    width: 280px;
+    height: 140px;
+    margin: 25px auto !important;
+  }
+
+  body[yahoo] #big-icon img {
+    display: none !important;
+  }
+
+  body[yahoo] .boxcell {
+    padding: 10px !important;
+  }
+
+  body[yahoo] .twocolstable {
+    margin: 15px 0;
+  }
+
+  body[yahoo] .twocolscell {
+    width: 100% !important;
+    float: left;
+    padding: 15px 0 0 0 !important;
+    border-right: 0 !important;
+  }
+
+  body[yahoo] .twocolscell:first-child {
+    padding-top: 0 !important;
+  }
+
+  body[yahoo] .twocolstable.border .twocolscell:first-child {
+    padding: 0 0 15px 0 !important;
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid !important;
+  }
+
+  body[yahoo] #box-image {
+    background: transparent url(../gfx/box-image-320.png) no-repeat;
+    width: 258px;
+    height: 120px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  body[yahoo] #box-image img {
+    display: none !important;
+  }
+
+  body[yahoo] .blankcell p {
+    font-size: 15px !important;
+    line-height: 22px !important;
+  }
+
+  body[yahoo] .linkscell {
+    float: left;
+    display: block;
+    width: 100% !important;
+  }
+
+  body[yahoo] .linkscell table {
+    width: 100% !important;
+    margin-top: 15px !important;
+  }
+
+  body[yahoo] .linkscell h4 {
+    margin-right: 0 !important;
+  }
+
+  body[yahoo] .list tr td:first-child, body[yahoo] .list tr th:first-child {
+    padding-left: 7px !important;
+  }
+
+  body[yahoo] .list tr td:last-child, body[yahoo] .list tr th:last-child {
+    padding-right: 7px !important;
+  }
+
+  body[yahoo] table {
+    width: 100% !important;
+  }
+
+  body[yahoo] .hide-desktop {
+    font-size: 12px !important;
+    max-height: none !important;
+    display: block !important;
+    z-index: 2;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body[yahoo] #big-icon {
+      background-image: url(../gfx/big-icon-320@2x.jpg);
+      -webkit-background-size: 280px 140px;
+      -moz-background-size: 280px 140px;
+      background-size: 280px 140px;
+    }
+
+    body[yahoo] #box-image {
+      background: transparent url(../gfx/box-image-320@2x.png) no-repeat;
+      -webkit-background-size: 258px 120px;
+      -moz-background-size: 258px 120px;
+      background-size: 258px 120px;
+    }
+  }
+}
