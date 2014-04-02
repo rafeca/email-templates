@@ -96,7 +96,7 @@ table {
 .blanktable tr:first-child .blankcell {
   padding-top: 17px;
   border-radius: 7px 7px 0 0;
-  background-image: url(../gfx/mueca.png);
+  background-image: url(gfx/mueca.png);
   background-repeat: no-repeat;
   background-position: left top;
 }

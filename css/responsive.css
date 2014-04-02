@@ -1,12 +1,24 @@
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 580px) {
   body[yahoo] .maintable, body[yahoo] .maincell {
     width: 100% !important;
     overflow: hidden !important;
   }
 
+  body[yahoo] .maintable {
+    margin-top: 10px !important;
+  }
+
+  body[yahoo] .toptable {
+    padding-right: 10px;
+  }
+
   body[yahoo] .username span {
     border: 0 !important;
     padding: 0 !important;
+  }
+
+  body[yahoo] .logotable {
+    padding: 0 10px;
   }
 
   body[yahoo] .blankcell {
@@ -40,14 +52,17 @@
   }
 
   body[yahoo] #big-icon {
-    background: transparent url(../gfx/big-icon-320.jpg) no-repeat;
-    width: 280px;
-    height: 140px;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
     margin: 25px auto !important;
   }
 
   body[yahoo] #big-icon img {
-    display: none !important;
+    height: auto !important;
+    visibility: hidden !important;
   }
 
   body[yahoo] .boxcell {
@@ -76,15 +91,18 @@
   }
 
   body[yahoo] #box-image {
-    background: transparent url(../gfx/box-image-320.png) no-repeat;
-    width: 258px;
-    height: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 100%;
+    height: auto;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
   body[yahoo] #box-image img {
-    display: none !important;
+    height: auto !important;
+    visibility: hidden !important;
   }
 
   body[yahoo] .blankcell p {
@@ -124,21 +142,5 @@
     max-height: none !important;
     display: block !important;
     z-index: 2;
-  }
-
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    body[yahoo] #big-icon {
-      background-image: url(../gfx/big-icon-320@2x.jpg);
-      -webkit-background-size: 280px 140px;
-      -moz-background-size: 280px 140px;
-      background-size: 280px 140px;
-    }
-
-    body[yahoo] #box-image {
-      background: transparent url(../gfx/box-image-320@2x.png) no-repeat;
-      -webkit-background-size: 258px 120px;
-      -moz-background-size: 258px 120px;
-      background-size: 258px 120px;
-    }
   }
 }
