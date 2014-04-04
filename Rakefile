@@ -33,6 +33,7 @@ def embed_responsive_css(file, fileout)
   css = '<style data-premailer="ignore" type="text/css">' + "\n"
   css += File.read('css/responsive.css')
   css += "\n" + '</style>'
+  css.gsub!("url(../", "url(" + BASE_URL)
   html.gsub!('<link rel="stylesheet" type="text/css" href="css/responsive.css">', css)
 
   File.open(fileout, "w") {|file| file.puts html}
