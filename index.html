@@ -11,11 +11,11 @@
 
   <style data-premailer="ignore" type="text/css">
     @media only screen and (max-width: 580px) {
-      body[yahoo] #big-icon {
+      body[yahoo] .responsive-img.main {
         background-image: url(gfx/big-icon-320@2x.jpg);
       }
 
-      body[yahoo] #box-image {
+      body[yahoo] .responsive-img.box {
         background-image: url(gfx/box-image-320@2x.png);
       }
     }
@@ -87,7 +87,7 @@
 
         <p>The introduction can have several paragraphs, but it should be short enough to make the main image visible:</p>
 
-        <p id="big-icon"><img width="520" height="240" alt="Main email image" src="gfx/big-icon.jpg" /></p>
+        <p class="responsive-img main"><img width="520" height="240" alt="Main email image" src="gfx/big-icon.jpg" /></p>
 
         <p>After the <strong>main image</strong> emails can have more text, with more detailed explanations. Lists can be used for organizing
           information in a clearer way:</p>
@@ -127,7 +127,7 @@
             <p>Images in dark boxes are permitted, but they must be smaller than the regular ones. Also,
               <strong>they must use a grey background</strong> (hex code #f4f4f4):</p>
 
-            <p id="box-image"><img width="490" height="200" alt="Image inside a dark box" src="gfx/box-image.png" /></p>
+            <p class="responsive-img main"><img width="490" height="200" alt="Image inside a dark box" src="gfx/box-image.png" /></p>
           </td>
         </tr>
         </table>

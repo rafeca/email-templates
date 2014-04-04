@@ -51,16 +51,17 @@
     padding: 15px 15px 0 15px !important;
   }
 
-  body[yahoo] #big-icon {
+  body[yahoo] .responsive-img {
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    margin: 25px auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
-  body[yahoo] #big-icon img {
+  body[yahoo] .responsive-img img {
     height: auto !important;
     visibility: hidden !important;
   }
@@ -88,21 +89,6 @@
     padding: 0 0 15px 0 !important;
     border-bottom-width: 1px !important;
     border-bottom-style: solid !important;
-  }
-
-  body[yahoo] #box-image {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    width: 100%;
-    height: auto;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  body[yahoo] #box-image img {
-    height: auto !important;
-    visibility: hidden !important;
   }
 
   body[yahoo] .blankcell p {
