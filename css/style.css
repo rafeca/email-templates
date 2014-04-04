@@ -95,7 +95,8 @@ table {
 
 .blanktable tr:first-child .blankcell {
   padding-top: 17px;
-  border-radius: 7px 7px 0 0;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
   background-image: url(gfx/mueca.png);
   background-repeat: no-repeat;
   background-position: left top;
@@ -106,7 +107,8 @@ table {
 }
 
 .blanktable tr:last-child .blankcell {
-  border-radius: 0 0 7px 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .blankcell p {
