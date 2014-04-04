@@ -391,18 +391,18 @@ ul li:last-child {
 }
 
 .blankcell.yellow hr {
-  border-bottom-color: #bfae55;
+  border-bottom-color: #cfbe05;
 }
 
 .blankcell.yellow .twocolscell:first-child {
-  border-color: #bfae55;
+  border-color: #cfbe05;
 }
 
 .blankcell.yellow .boxcell {
   background-color: #ffe45e;
   background-color: #ffef77;
   border: 0;
-  box-shadow: 1px 1px 2px #f3c329;
+  box-shadow: 1px 1px 1px #cfbe05;
 }
 
 .blankcell.yellow .list tr:nth-child(odd) td, .blankcell.yellow .list tr.total td {
@@ -426,17 +426,17 @@ ul li:last-child {
 }
 
 .blankcell.green hr {
-  border-bottom-color: #57b15a;
+  border-bottom-color: #43bb57;
 }
 
 .blankcell.green .twocolscell:first-child {
-  border-color: #57b15a;
+  border-color: #43bb57;
 }
 
 .blankcell.green .boxcell {
   background-color: #87f18a;
   border: 0;
-  box-shadow: 1px 1px 2px #53cd67;
+  box-shadow: 1px 1px 1px #43bb57;
 }
 
 .blankcell.green .list tr:nth-child(odd) td, .blankcell.green .list tr.total td {
@@ -460,17 +460,17 @@ ul li:last-child {
 }
 
 .blankcell.blue hr {
-  border-bottom-color: #578cad;
+  border-bottom-color: #98b6c9;
 }
 
 .blankcell.blue .twocolscell:first-child {
-  border-color: #578cad;
+  border-color: #98b6c9;
 }
 
 .blankcell.blue .boxcell {
   background-color: #98b6c9;
   border: 0;
-  box-shadow: 1px 1px 2px #7896a9;
+  box-shadow: 1px 1px 1px #7896a9;
 }
 
 .blankcell.blue .boxcell hr {
@@ -501,11 +501,11 @@ ul li:last-child {
 }
 
 .blankcell.turquoise .twocolscell:first-child {
-  border-color: #639a9f;
+  border-color: #63babf;
 }
 
 .blankcell.turquoise hr {
-  border-bottom-color: #639a9f;
+  border-bottom-color: #63babf;
 }
 
 .turquoise.blankcell, .turquoise .list, .turquoise .boxcell, .turquoise .twocolscell {
@@ -513,15 +513,14 @@ ul li:last-child {
 }
 
 .blankcell.turquoise .boxcell {
-  background-color: #9fd8d9;
-  background-color: #5fc8c9;
+  background-color: #63babf;
   border: 0;
-  box-shadow: 1px 1px 2px #639a9f;
+  box-shadow: 1px 1px 1px #439a9f;
 }
 
 .blankcell.turquoise .list tr:nth-child(odd) td, .blankcell.turquoise .list tr.total td {
-  background-color: #5fc8c9;
-  border: 1px solid #5fc8c9;
+  background-color: #63babf;
+  border: 1px solid #63babf;
   border-right-width: 0;
   border-left-width: 0;
 }
