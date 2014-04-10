@@ -22,7 +22,7 @@
   }
 
   body[yahoo] .blankcell {
-    padding: 17px 10px 10px !important;
+    padding: 30px 10px !important;
     background-image: none !important;
     border-radius: 0px !important;
   }
@@ -129,5 +129,28 @@
     max-height: none !important;
     display: block !important;
     z-index: 2;
+  }
+
+
+  body[yahoo] .logotable .logocell:first-child {
+    background: transparent url(../gfx/logo@2x.png) no-repeat left center;
+    background-size: contain;
+  }
+
+  body[yahoo] .logotable .logocell:first-child img {
+    width: auto;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-device-pixel-ratio: 2) { {
+  body[yahoo] .logotable .logocell:first-child {
+    background: transparent url(../gfx/logo@2x.png) no-repeat left center;
+    background-size: contain;
+  }
+
+  body[yahoo] .logotable .logocell:first-child img {
+    width: auto;
+    visibility: hidden;
   }
 }

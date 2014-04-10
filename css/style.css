@@ -30,6 +30,7 @@ table {
 
 .topcell {
   text-align: right;
+  padding: 7px 0;
 }
 
 .logotable, .navtable {
@@ -104,9 +105,6 @@ table {
 
 .blanktable tr:last-child .blankcell {
   padding-bottom: 17px;
-}
-
-.blanktable tr:last-child .blankcell {
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
 }
@@ -205,6 +203,10 @@ h6 {
   margin: 0 0 15px 0;
 }
 
+h4 + h5 {
+  margin-top: 25px;
+}
+
 p {
   font-size: 14px;
 }
@@ -230,7 +232,7 @@ hr {
   text-align: right;
   line-height: 30px !important;
   padding: 15px 0;
-  margin: 30px 0;
+  margin: 15px 0 30px 0;
   border-top: 1px solid #bcbcbc;
   border-bottom: 1px solid #bcbcbc;
 }
@@ -239,6 +241,26 @@ hr {
   margin-top: -4px;
   margin-left: 10px;
   vertical-align: middle;
+}
+
+.feedback {
+  text-align: right;
+}
+
+.feedback a {
+  white-space: nowrap;
+}
+
+.feedback a:after {
+  content: ' ';
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  display: inline-block;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+
+  border-left: 7px solid #2c97fc;
 }
 
 .linkstable {
@@ -278,11 +300,11 @@ hr {
   font-family: Arial, sans-serif;
   font-size: 11px;
   line-height: 14px;
-  color: #fff;
   padding: 15px 30px 0 30px;
 }
 
 .terms p {
+  color: #fff;
   font-size: 11px;
   margin-bottom: 10px;
 }
