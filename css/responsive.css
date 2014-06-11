@@ -2,6 +2,7 @@
   body[yahoo] .maintable, body[yahoo] .maincell {
     width: 100% !important;
     overflow: hidden !important;
+    min-width: 320px;
   }
 
   body[yahoo] .maintable {
