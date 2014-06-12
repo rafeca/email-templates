@@ -1,6 +1,7 @@
 require 'premailer'
 require 'pony'
 require 'fileutils'
+require 'yaml'
 
 BASE_URL = 'http://rafeca.github.com/email-templates/'
 
@@ -23,6 +24,14 @@ end
 def embed_responsive_css(file, fileout)
 
   html = File.read(file)
+
+  # custom transforms
+  if File.file?('replacements.yml')
+    transforms = YAML.load_file('replacements.yml')
+    transforms.each do |from, to|
+      html.gsub!(from, to)
+    end
+  end
 
   # transform absolute links
   html.gsub!('src="/', 'src="')
