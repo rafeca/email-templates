@@ -17,7 +17,7 @@ def compile_html(file, fileout)
     puts "#{w[:message]} (#{w[:level]}) may not render properly in #{w[:clients]}"
   end
 
-  File.open(fileout, "w") {|file| file.puts out}
+  File.open(fileout, 'w') {|file| file.puts out}
   out
 end
 
@@ -40,19 +40,22 @@ def embed_responsive_css(file, fileout)
 
   # embed responsive stylesheet into html
   css = '<style data-premailer="ignore" type="text/css">' + "\n"
-  css += File.read('css/responsive.css')
+  css += File.read(File.join('css', 'responsive.css'))
   css += "\n" + '</style>'
-  css.gsub!("url(../", "url(" + BASE_URL)
+  css.gsub!('url(../', 'url(' + BASE_URL)
   html.gsub!('<link rel="stylesheet" type="text/css" href="css/responsive.css">', css)
 
-  File.open(fileout, "w") {|file| file.puts html}
+  File.open(fileout, 'w') {|file| file.puts html}
 end
 
 def build_email(file)
-  FileUtils::mkdir_p "dist/"
-  file = (file ? file : "index") + ".html"
-  filetmp = "tmp_" + File.basename(file)
-  fileout = "dist/" + File.basename(file)
+  FileUtils::mkdir_p 'dist'
+  file = (file ? file : 'index')
+  if File.extname(file).length == 0
+    file += '.html'
+  end
+  filetmp = 'tmp_' + File.basename(file)
+  fileout = File.join('dist', File.basename(file))
 
   embed_responsive_css(file, filetmp)
   out = compile_html(filetmp, fileout)
@@ -64,7 +67,17 @@ end
 # Begin actual tasks
 
 task :build, [:file] do |t, args|
+
   build_email(args.file)
+end
+
+task :buildall, [:folder] do |t, args|
+  Dir[File.join(args.folder, '*.html')].each do |file|
+    print "--------\n"
+    print "building #{file}\n"
+    print "--------\n"
+    build_email(file)
+  end
 end
 
 task :sendmail, [:email_recipient, :file] do |t, args|
