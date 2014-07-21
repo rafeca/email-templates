@@ -8,7 +8,7 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   width: 100% !important;
-  background-color: #000;
+  background-color: #000000;
   -webkit-text-size-adjust: none;
 }
 
@@ -113,6 +113,9 @@ table {
   margin: 0 0 15px 0;
   padding-top: 0;
   line-height: 20px;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .boxtable {
@@ -142,6 +145,10 @@ table {
 
 .twocolscell {
   width: 260px;
+}
+
+table.maintable table.nomargin {
+  margin: 0;
 }
 
 .twocolscell:first-child {
@@ -174,7 +181,7 @@ table {
 }
 
 h1 {
-  font-size: 52px;
+  font-size: 48px;
   margin: 0 0 15px 0;
 }
 

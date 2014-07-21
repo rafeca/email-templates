@@ -148,6 +148,11 @@
     width: auto;
     visibility: hidden;
   }
+
+  body[yahoo] .center {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 @media only screen and (min-device-pixel-ratio: 2) { {
