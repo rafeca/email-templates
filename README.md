@@ -1,6 +1,6 @@
-# giffgaff emails template
+# responsive emails template
 
-This project contains an example of responsive email templates (used to create the giffgaff marketing emails).
+This project contains an example of responsive email templates (they were used to create the giffgaff marketing emails).
 
 You can check the templates by accessing [here](http://rafeca.com/email-templates)
 
