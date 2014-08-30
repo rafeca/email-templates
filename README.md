@@ -33,6 +33,24 @@ To send any other email (a different html file inside the repo folder), just add
 $  rake "sendmail[youremailadress@gmail.com,statement_points]"
 ```
 
+## Building emails
+
+You can only compile the email into a new html file without sending any email. To do so,
+execute the build task witht the filename of the mail that you want to build:
+
+```bash
+$  rake "build[statement_points]"
+```
+
+The built email will be stored inside the `dist/` folder with the same file name as
+the original html.
+
+Additionally, you can build all the emails in a specific folder:
+
+```bash
+$  rake "buildall[myemails/]"
+```
+
 # Compatibility
 
 ## First-class browsers
