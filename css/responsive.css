@@ -153,6 +153,10 @@
     margin: 0 auto;
     display: block;
   }
+
+  body[yahoo] .mobile-full-width {
+    width: 100% !important;
+  }
 }
 
 @media only screen and (min-device-pixel-ratio: 2) { {

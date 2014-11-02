@@ -17,6 +17,10 @@ def compile_html(file, fileout)
     puts "#{w[:message]} (#{w[:level]}) may not render properly in #{w[:clients]}"
   end
 
+  # transform strange characters
+  out.gsub!('%3C%25', '<%')
+  out.gsub!('%25%3E', '%>')
+
   File.open(fileout, 'w') {|file| file.puts out}
   out
 end
@@ -37,6 +41,10 @@ def embed_responsive_css(file, fileout)
   html.gsub!('src="/', 'src="')
   html.gsub!('href="/', 'href="')
   html.gsub!('url(', 'url(' + BASE_URL)
+
+  # transform strange characters
+  html.gsub!('<%', '%3C%25')
+  html.gsub!('%>', '%25%3E')
 
   # embed responsive stylesheet into html
   css = '<style data-premailer="ignore" type="text/css">' + "\n"
