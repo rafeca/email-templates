@@ -433,6 +433,10 @@ ul li:last-child {
   color: #3c3c3c;
 }
 
+.breakwords {
+  word-break: break-all;
+}
+
 
 /** YELLOW TABLES **/
 
