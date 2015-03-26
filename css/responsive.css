@@ -150,6 +150,20 @@
   body[yahoo] .logotable .logocell:first-child img {
     width: auto;
     visibility: hidden;
+    display: none;
+  }
+
+  body[yahoo] .logocell a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: transparent url(../gfx/link-plus@2x.png) no-repeat left center;
+    background-size: contain;
+  }
+
+  body[yahoo] .logocell a img {
+    width: auto;
+    visibility: hidden;
   }
 
   body[yahoo] .center {
@@ -162,13 +176,26 @@
   }
 }
 
-@media only screen and (min-device-pixel-ratio: 2) { {
+@media only screen and (min-device-pixel-ratio: 2) {
   body[yahoo] .logotable .logocell:first-child {
     background: transparent url(../gfx/logo@2x.png) no-repeat left center;
     background-size: contain;
   }
 
   body[yahoo] .logotable .logocell:first-child img {
+    width: auto;
+    visibility: hidden;
+  }
+
+  body[yahoo] .logocell a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: transparent url(../gfx/link-plus@2x.png) no-repeat left center;
+    background-size: contain;
+  }
+
+  body[yahoo] .logocell a img {
     width: auto;
     visibility: hidden;
   }
