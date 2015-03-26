@@ -584,3 +584,30 @@ ul li:last-child {
   border-color: #00777f;
   color: #efefef;
 }
+
+/** GREY TABLES **/
+
+.blankcell.grey {
+  background: #f4f4f4 !important;
+}
+
+.blankcell.grey .boxcell {
+  background-color: #e4e4e4;
+  border: 0;
+  box-shadow: 1px 1px 1px #e2e2e2;
+}
+
+.blankcell.grey .list tr:nth-child(odd) td, .blankcell.turquoise .list tr.total td {
+  background-color: #e4e4e4;
+  border: 1px solid #e2e2e2;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.blankcell.grey .twocolscell:first-child {
+  border-color: #cacaca;
+}
+
+.blankcell.grey hr {
+  border-bottom-color: #cacaca;
+}
