@@ -138,6 +138,9 @@
     z-index: 2;
   }
 
+  body[yahoo] .logotable .logocell {
+    height: 60px;
+  }
 
   body[yahoo] .logotable .logocell:first-child {
     background: transparent url(../gfx/logo@2x.png) no-repeat left center;
